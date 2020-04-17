@@ -1,4 +1,3 @@
-import threading
 import sqlite3
 class Respondent():
     wiek = ""
