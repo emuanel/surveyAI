@@ -21,7 +21,17 @@
 
 <!-- formularz z ankieta-->
     <form method="POST" name="myForm">
-        <p>Wiek:<input type="text" name="wiek" id="wiek" onblur="javascript:sprawdzWiek()"></p>
+        <p>Wiek:
+          <input
+                  required
+                  type="number"
+                  min="0"
+                  max="100"
+                  name="wiek"
+                  id="wiek"
+                  title="Podaj poprawny wiek"
+          >
+        </p>
 
 
           <p>
