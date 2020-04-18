@@ -20,8 +20,7 @@ def czesc1():
 def czesc2():
     odebrane = request.form
     respondent = Respondent()
-    respondent.wpisz_dane(session['form1'])
-    respondent.dopisz_dane(odebrane)
+    respondent.wpisz_dane(session['form1'], odebrane)
     respondent.wywietl_dane()
     respondent.zapis_do_bazy()
     return render_template('end2.html')
