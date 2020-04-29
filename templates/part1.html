@@ -1,131 +1,139 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Quiz Python</title>
+    <head>
+        <title>Quiz Python</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="static/wyglada.css">
+    </head>
+    <body >
+        <div id="mainCont">
+            <div id="header">
+                 <img src="static/neural.png" style="height:110px; float:left" alt="a" />
+                <h1 class="naglowek">Sztuczna inteligencja w polskiej służbie zdrowia</h1>
 
-</head>
-<body bgcolor="#ffebcd">
-    <H1><CENTER><b>Sztuczna inteligencja w polskiej służbie zdrowia</b></CENTER></H1>
-    <b>Szanowna/y/ Pani/e/</b>
-	<p>Serdecznie proszę o wypełnienie załączonego kwestionariusza. Chcemy w ten sposób uzyskać
-	Państwa opinie na temat wdrażania systemów eksperckich opartych o sztuczną inteligencję w polskiej służbie zdrowia.
-	Zapewniamy Państwu pełną anonimowość wypowiedzi. Zebrane dane wykorzystamy jedynie w zbiorczych
-	zestawieniach statystycznych.</p>
-	<p>Dziękujemy za szczere i wyczerpujące odpowiedzi</p>
-    <br>
-<!-- formularz z ankieta-->
+                <h4 class="naglowek">Ankieta</h4>
+            </div>
+            <div class="menu">
+            <div id="animacja" style="float:left"></div>
+                <br/>
+                <a href="/stronaglowna">Strona główna</a><br />
+                <a href="/part1">Ankieta</a><br />
+            </div>
 
-    <form method="POST" action="/czesc1" name="myForm">
-        <b><p>Wiek:</b>
-          <input
-                  required
-                  type="number"
-                  min="0"
-                  max="100"
-                  name="wiek"
-                  id="wiek"
-                  title="Podaj poprawny wiek"
-          >
-        </p>
+        <!-- formularz z ankieta-->
 
+            <form  method="POST" action="/czesc1" name="myForm">
 
-          <p>
-            <b>Płeć:</b>
-            <br >
-              <label>
-                <input required type="radio" value="0" name="0">
-                Kobieta
-              </label>
-              <br>
-
-              <label>
-                <input  type="radio" value="1" name="0">
-                Mężczyzna
-              </label>
-              <br>
-
-          </p>
-
-          <p>
-            <b>Wielkość miejscowości w której Pan/Pani mieszka:</b>
-            <br>
-              <label>
-                <input required type="radio" value="wies" name="1">
-                wieś
-              </label>
-              <br>
-
-              <label>
-                <input type="radio" value="19 tys. mieszkancow" name="1">
-                19 tyś. mieszkańców
-              </label>
-              <br>
-
-              <label>
-                <input type="radio" value="20-49 tys. mieszkancow" name="1">
-                20-49 tyś. mieszkańców
-              </label>
-              <br>
-
-              <label>
-                <input type="radio" value="50-99 tys. mieszkancow" name="1">
-                50-99 tyś. mieszkańców
-              </label>
-              <br>
-
-              <label>
-                <input type="radio" value="100-199 tys. mieszkancow" name="1">
-                100-199 tyś. mieszkańców
-              </label>
-              <br>
-
-              <label>
-                <input type="radio" value="200-499 tys. mieszkancow" name="1">
-                200-499 tyś. mieszkańców
-              </label>
-              <br>
-
-              <label>
-                <input type="radio" value="500+ tys. mieszkancow"  name="1">
-                500+ tyś
-              </label>
-              <br>
-
-          </p>
-
-          <p>
-            <b>Która/e z poniższych odpowiedzi według Pana/Pani NAJLEPIEJ opisuje termin “Sztuczna Inteligencja”?</b>
-            <br>
-
-              <label>
-                <input required type="radio" value="zdolnosc systemu do prawidlowego interpretowania danych, nauki na ich podstawie oraz wykorzystywania tej wiedzy, aby wykonywac okreslone zadania" name="2">
-                Zdolność systemu do prawidłowego interpretowania danych, nauki na ich podstawie oraz wykorzystywania tej wiedzy, aby wykonywać określone zadania
-              </label>
-              <br>
-
-              <label>
-                <input type="radio" value="Zdolnosc systemu do projektowania innych systemow, ktora pozwala zastapic ludzi w powtarzalnych pracach" name="2">
-                Zdolność systemu do projektowania innych systemów, która pozwala zastąpić ludzi w powtarzalnych pracach
-              </label>
-              <br>
-
-              <label>
-                <input type="radio" value="Technologia, ktora uczy sie samodzielnie" name="2">
-                Technologia, która uczy się samodzielnie
-              </label>
-              <br>
-
-               <label>
-                  <input type="radio" value="Nigdy nie zetknałem sie z tym pojeciem" name="2">
-                  Nigdy nie zetknąłem się z tym pojęciem
-               </label>
-                <br>
-          </p>
+                <b><p>Wiek:</b>
+                  <input
+                          required
+                          type="number"
+                          min="0"
+                          max="100"
+                          name="wiek"
+                          id="wiek"
+                          title="Podaj poprawny wiek"
+                  >
+                </p>
 
 
-        <button type="submit">DALEJ</button>
-    </form>
-</body>
+                  <p >
+                    <b>Płeć:</b>
+                    <br >
+                      <label >
+                        <input required type="radio" value="0" name="0"  >
+                        Kobieta
+                      </label>
+                      <br>
+
+                      <label>
+                        <input  type="radio" value="1" name="0">
+                        Mężczyzna
+                      </label>
+                      <br>
+
+                  </p>
+
+                  <p>
+                    <b>Wielkość miejscowości w której Pan/Pani mieszka:</b>
+                    <br>
+                      <label>
+                        <input required type="radio" value="wies" name="1">
+                        wieś
+                      </label>
+                      <br>
+
+                      <label>
+                        <input type="radio" value="19 tys. mieszkancow" name="1">
+                        19 tyś. mieszkańców
+                      </label>
+                      <br>
+
+                      <label>
+                        <input type="radio" value="20-49 tys. mieszkancow" name="1">
+                        20-49 tyś. mieszkańców
+                      </label>
+                      <br>
+
+                      <label>
+                        <input type="radio" value="50-99 tys. mieszkancow" name="1">
+                        50-99 tyś. mieszkańców
+                      </label>
+                      <br>
+
+                      <label>
+                        <input type="radio" value="100-199 tys. mieszkancow" name="1">
+                        100-199 tyś. mieszkańców
+                      </label>
+                      <br>
+
+                      <label>
+                        <input type="radio" value="200-499 tys. mieszkancow" name="1">
+                        200-499 tyś. mieszkańców
+                      </label>
+                      <br>
+
+                      <label>
+                        <input type="radio" value="500+ tys. mieszkancow"  name="1">
+                        500+ tyś
+                      </label>
+                      <br>
+
+                  </p>
+
+                  <p>
+                    <b>Która/e z poniższych odpowiedzi według Pana/Pani NAJLEPIEJ opisuje termin “Sztuczna Inteligencja”?</b>
+                    <br>
+
+                      <label>
+                        <input required type="radio" value="zdolnosc systemu do prawidlowego interpretowania danych, nauki na ich podstawie oraz wykorzystywania tej wiedzy, aby wykonywac okreslone zadania" name="2">
+                        Zdolność systemu do prawidłowego interpretowania danych, nauki na ich podstawie oraz wykorzystywania tej wiedzy, aby wykonywać określone zadania
+                      </label>
+                      <br>
+
+                      <label>
+                        <input type="radio" value="Zdolnosc systemu do projektowania innych systemow, ktora pozwala zastapic ludzi w powtarzalnych pracach" name="2">
+                        Zdolność systemu do projektowania innych systemów, która pozwala zastąpić ludzi w powtarzalnych pracach
+                      </label>
+                      <br>
+
+                      <label>
+                        <input type="radio" value="Technologia, ktora uczy sie samodzielnie" name="2">
+                        Technologia, która uczy się samodzielnie
+                      </label>
+                      <br>
+
+                       <label>
+                          <input type="radio" value="Nigdy nie zetknałem sie z tym pojeciem" name="2">
+                          Nigdy nie zetknąłem się z tym pojęciem
+                       </label>
+                        <br>
+                  </p>
+
+
+                <button type="submit">DALEJ</button>
+
+            </form>
+        </div>
+    </body>
 </html>
