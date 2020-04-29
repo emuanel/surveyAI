@@ -1,0 +1,108 @@
+body
+{
+	background-color: #C0C0C0;
+}
+
+
+
+#mainCont
+{
+    margin: auto;
+    width: 60%;
+    border:3px solid #73AD21;
+    padding: 10px;
+    background-color:#669933;
+    height: 1400px;
+}
+
+
+#header
+{
+	border:8px solid #003300;
+    background-color:#669933;
+    color:white;
+    text-align:center;
+    padding:5px;
+	height: 120px;
+}
+
+.menu {
+    border: 3px solid #003300;
+    line-height: 30px;
+    background-color: #339966;
+    height: 1228px;
+    width: 140px;
+    float: left;
+    padding: 5px;
+}
+
+
+.content
+{
+    width: 550px;
+    float:left;
+    padding:10px;
+}
+
+.naglowek
+{
+    color: white;
+}
+
+
+
+th, td, tr {
+	text-align: center;
+    border: 1px solid;
+    padding: 5px;
+}
+
+a
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+	font-weight:bold;
+}
+
+#animacja
+{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    -webkit-animation-name: przykladowaAnimacja;
+    -webkit-animation-duration: 10s;
+    animation-name: przykladowaAnimacja;
+    animation-duration: 10s;
+}
+
+@-webkit-keyframes przykladowaAnimacja
+{
+    from {background-color: red;}
+    to {background-color: green;}
+
+}
+
+@keyframes przykladowaAnimacja
+{
+    from {background-color: red;}
+    to {background-color: green;}
+}
+
+#mainContb
+{
+    margin: auto;
+    width: 60%;
+    border:3px solid #73AD21;
+    padding: 10px;
+    background-color:#669933;
+    height: 1900px;
+}
+.menub {
+    border: 3px solid #003300;
+    line-height: 30px;
+    background-color: #339966;
+    height: 1728px;
+    width: 140px;
+    float: left;
+    padding: 5px;
+}

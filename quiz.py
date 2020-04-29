@@ -6,11 +6,23 @@ app.secret_key = "hello"
 
 @app.route('/')
 def index():
+    return render_template('stronaglowna.html')
+
+
+@app.route('/part1')
+def index2():
     return render_template('part1.html')
+
+@app.route('/stronaglowna')
+def index3():
+    return render_template('stronaglowna.html')
 
 @app.route('/czesc1', methods=['POST'])
 def czesc1():
     if request.form.get("2") == 'Nigdy nie zetknałem sie z tym pojeciem':
+        respondent1 = Respondent()
+        respondent1.wpisz_dane1(request.form)
+        respondent1.zapis_do_bazy()
         return render_template('end1.html')
     else:
         session['form1'] = request.form

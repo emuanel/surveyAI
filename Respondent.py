@@ -21,6 +21,12 @@ class Respondent():
     skracanie_kolejek = ""
     przyspieszanie_pracy = ""
 
+    def wpisz_dane1(self, dane):
+        self.wiek = dane.get("wiek")
+        self.plec = dane.get("0")
+        self.miejscowosc = dane.get("1")
+        self.definicja = dane.get("2")
+
     def wpisz_dane(self, dane, dane2):
         self.wiek = dane.get("wiek")
         self.plec = dane.get("0")
