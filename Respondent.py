@@ -1,3 +1,4 @@
+#klasa
 import sqlite3
 class Respondent():
     wiek = ""
@@ -21,13 +22,17 @@ class Respondent():
     skracanie_kolejek = ""
     przyspieszanie_pracy = ""
 
-    def wpisz_dane(self, dane):
+    def wpisz_dane1(self, dane):
         self.wiek = dane.get("wiek")
         self.plec = dane.get("0")
         self.miejscowosc = dane.get("1")
         self.definicja = dane.get("2")
 
-    def dopisz_dane(self, dane2):
+    def wpisz_dane(self, dane, dane2):
+        self.wiek = dane.get("wiek")
+        self.plec = dane.get("0")
+        self.miejscowosc = dane.get("1")
+        self.definicja = dane.get("2")
         self.wspomaganie_decyzji = dane2.get("3")
         self.prognozowanie = dane2.get("4")
         self.planowanie = dane2.get("5")
@@ -44,7 +49,6 @@ class Respondent():
         self.diagnostyka_nowotworow_tarczycy = dane2.get("16")
         self.skracanie_kolejek = dane2.get("17")
         self.przyspieszanie_pracy = dane2.get("18")
-
 
     def wywietl_dane(self):
         print(self.wiek, self.plec, self.miejscowosc, self.definicja, self.wspomaganie_decyzji, self.prognozowanie, self.planowanie, self.analiza_obrazow, self.detekcja_regularnosci, self.monitorowanie_zdrowia, self.trafnosc_diagnoza, self.wykrywanie_nieprawidlowosci, self.umawianie_wizyt, self.precyzyjniejsza_diagnostyka, self.rozwiniecie_sluzby_zdrowia, self.lepsze_leczenie, self.diagnostyka_covid, self.diagnostyka_nowotworow_tarczycy, self.skracanie_kolejek, self.przyspieszanie_pracy)
